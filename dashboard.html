@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TripEase - Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard-styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <h2>TripEase</h2>
+    </div>
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">Create New Trip</a></li>
+      <li><a href="#">Join a Trip</a></li>
+      <li><a href="#">Itinerary Templates</a></li>
+      <li><a href="#">Notifications</a></li>
+      <li><a href="#">Account Settings</a></li>
+    </ul>
+  </nav>
+
+  <div class="main-content">
+    <header class="dashboard-header">
+      <h1>Welcome, [User Name]</h1>
+      <div class="user-actions">
+        <button class="btn-logout">Log Out</button>
+      </div>
+    </header>
+
+    <section class="overview">
+      <h2>Your Trips</h2>
+      <div class="trip-cards">
+        <div class="trip-card">
+          <h3>Trip to Paris</h3>
+          <p>Departure: 12th Oct 2024</p>
+          <p>Status: Ongoing</p>
+          <button class="btn-view">View Trip</button>
+        </div>
+        <div class="trip-card">
+          <h3>Road Trip to Italy</h3>
+          <p>Departure: 25th Nov 2024</p>
+          <p>Status: Planning</p>
+          <button class="btn-view">View Trip</button>
+        </div>
+      </div>
+      <button class="btn-create-trip">Create New Trip</button>
+    </section>
+
+    <section class="notifications">
+      <h2>Notifications</h2>
+      <div class="notification-list">
+        <div class="notification-item">
+          <p>Trip to Paris: Itinerary approved by Sarah.</p>
+          <button class="btn-view">View</button>
+        </div>
+        <div class="notification-item">
+          <p>Road Trip to Italy: Reminder to approve the itinerary.</p>
+          <button class="btn-view">View</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    mobileMenu.addEventListener('click', function() {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
