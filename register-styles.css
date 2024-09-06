@@ -1,3 +1,4 @@
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -5,41 +6,39 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
+/* Body for Signup Page */
+.signup-page {
     background-color: #f4f4f9;
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Header */
-.main-header {
-    background-color: white;
-    border-bottom: 1px solid #ddd;
-}
-
-.logo-image {
-    width: 50px; /* Consistent logo size for header */
-}
-
-.logo-text {
-    font-size: 1.8em;
-    color: #FF914C;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Signup Container */
 .signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     background-color: #f0f0f0;
-    padding: 20px; /* Added padding for better spacing */
 }
 
+/* Signup Card */
 .signup-card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     max-width: 500px;
     width: 100%;
-    margin: 20px auto; /* Centered the card */
 }
 
-.logo-image {
-    width: 80px; /* Larger logo size for signup card */
+/* Logo */
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 80px;
 }
 
 .logo-text {
@@ -48,13 +47,20 @@ body {
     font-weight: 600;
 }
 
-.form-group label {
-    color: #555;
+/* Form Controls */
+.form-control {
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
 }
 
+/* Buttons */
 .btn-primary {
     background-color: #FF914C;
     border-color: #FF914C;
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 100%;
 }
 
 .btn-primary:hover {
@@ -63,7 +69,16 @@ body {
 }
 
 /* Footer */
-footer {
-    background-color: #f4f4f9;
-    color: #333;
+.signup-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-footer a {
+    color: #FF914C;
+    text-decoration: none;
+}
+
+.signup-footer a:hover {
+    color: #03a9f4;
 }
