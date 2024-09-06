@@ -9,16 +9,19 @@
 </head>
 <body>
 
+  <!-- Navbar with Burger Menu -->
   <nav class="navbar">
     <div class="logo">
       <h2>TripEase</h2>
     </div>
+    <!-- Burger Menu -->
     <div class="menu-toggle" id="mobile-menu">
       <span class="bar"></span>
       <span class="bar"></span>
       <span class="bar"></span>
     </div>
-    <ul class="nav-links">
+    <!-- Navigation Links -->
+    <ul class="nav-links" id="nav-links">
       <li><a href="#">Dashboard</a></li>
       <li><a href="#">Create New Trip</a></li>
       <li><a href="#">Join a Trip</a></li>
@@ -28,6 +31,7 @@
     </ul>
   </nav>
 
+  <!-- Main Content of the Dashboard -->
   <div class="main-content">
     <header class="dashboard-header">
       <h1>Welcome, [User Name]</h1>
@@ -36,6 +40,7 @@
       </div>
     </header>
 
+    <!-- Overview Section -->
     <section class="overview">
       <h2>Your Trips</h2>
       <div class="trip-cards">
@@ -55,6 +60,7 @@
       <button class="btn-create-trip">Create New Trip</button>
     </section>
 
+    <!-- Notifications Section -->
     <section class="notifications">
       <h2>Notifications</h2>
       <div class="notification-list">
@@ -70,9 +76,10 @@
     </section>
   </div>
 
+  <!-- JavaScript for Burger Menu -->
   <script>
     const mobileMenu = document.getElementById('mobile-menu');
-    const navLinks = document.querySelector('.nav-links');
+    const navLinks = document.getElementById('nav-links');
 
     mobileMenu.addEventListener('click', function() {
       navLinks.classList.toggle('active');
