@@ -4,81 +4,331 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-}
+  }
+  
+  body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  .main-header {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0; /* Reduced header size */
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-image {
+    width: 50px; /* Adjusted size for smaller header */
+    margin-right: 10px;
+  }
+  
+  .logo-text {
+    font-size: 1.8em;
+    color: #FF914C; /* Sunset color for logo text */
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #FF914C; /* Updated color */
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
 
-/* Body for Signup Page */
-.signup-page {
+  .vid
+  
+  .hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .hero-content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 50px;
+    border-radius: 10px;
+  }
+  
+  .tagline {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+  }
+  
+  .cta-buttons a {
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    margin: 10px;
+    font-size: 1.1em;
+    transition: transform 0.3s ease;
+  }
+  
+  .primary-btn {
+    background-color: #FF914C;
+    color: white;
+  }
+  
+  .primary-btn:hover {
+    background-color: #03a9f4;
+  }
+  
+  .secondary-btn {
+    background-color: white;
+    color: #FF914C;
+    border: 2px solid #FF914C;
+  }
+  
+  .secondary-btn:hover {
+    background-color: #03a9f4;
+    color: white;
+    border: none;
+  }
+  
+  .cta-buttons a:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Features Section */
+  .features {
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+  }
+  
+  .features h3 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .feature-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #f4f4f9;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h4 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #FF914C;
+  }
+  
+  .card p {
+    font-size: 1.1em;
+    color: #555;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #f4f4f9;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+  }
+
+  /* LOGIN  */
+  body {
     background-color: #f4f4f9;
     font-family: 'Poppins', sans-serif;
-}
-
-/* Signup Container */
-.signup-container {
+  }
+  
+  .login-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: #f0f0f0;
-}
-
-/* Signup Card */
-.signup-card {
+  }
+  
+  .login-card {
     background-color: white;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
+    max-width: 400px;
     width: 100%;
-}
-
-/* Logo */
-.logo {
+  }
+  
+  .logo {
     text-align: center;
     margin-bottom: 20px;
-}
-
-.logo img {
+  }
+  
+  .logo img {
     width: 80px;
-}
-
-.logo-text {
+  }
+  
+  .logo-text {
     font-size: 2em;
     color: #FF914C;
     font-weight: 600;
-}
-
-/* Form Controls */
-.form-control {
+  }
+  
+  .form-control {
     border-radius: 30px;
     padding: 10px 20px;
-    margin-bottom: 20px;
-}
-
-/* Buttons */
-.btn-primary {
+  }
+  
+  .btn-primary {
     background-color: #FF914C;
     border-color: #FF914C;
     border-radius: 30px;
     padding: 10px 20px;
     width: 100%;
-}
-
-.btn-primary:hover {
+  }
+  
+  .btn-primary:hover {
     background-color: #03a9f4;
     border-color: #03a9f4;
-}
-
-/* Footer */
-.signup-footer {
+  }
+  
+  .login-footer {
     text-align: center;
     margin-top: 20px;
-}
-
-.signup-footer a {
+  }
+  
+  .login-footer a {
     color: #FF914C;
     text-decoration: none;
+  }
+  
+  .login-footer a:hover {
+    color: #03a9f4;
+  }
+  
+/* SIGN UP  */
+/* General Styles */
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  .main-header {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo-image {
+    width: 50px;
+  }
+  
+  .logo-text {
+    font-size: 1.8em;
+    color: #FF914C;
+  }
+  
+  /* Signup Container */
+  /* Adjusting the card height */
+.signup-card {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  max-height: 85vh; /* Limit the card's height to 85% of the viewport height */
+  margin: 20px;
+  overflow-y: auto; /* Enable internal scroll if the content exceeds the max height */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
 }
 
-.signup-footer a:hover {
-    color: #03a9f4;
+/* Adjust logo size for better fit */
+.logo-image {
+  width: 60px;
 }
+
+/* Responsive handling for smaller devices */
+@media (max-width: 768px) {
+  .signup-card {
+    max-height: 90vh; /* Slightly increase the height on smaller screens */
+  }
+
+  .logo-image {
+    width: 50px;
+  }
+
+  .logo-text {
+    font-size: 1.5em;
+  }
+}
+
+  
+  .btn-primary {
+    background-color: #FF914C;
+    border-color: #FF914C;
+  }
+  
+  .btn-primary:hover {
+    background-color:#ec7830;
+    border-color:  #f17223;
+  }
+
+  
+  
+  /* Footer */
+  footer {
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
