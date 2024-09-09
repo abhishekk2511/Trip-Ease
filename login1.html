@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TripEase - Log In</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="loginstyles.css">
+</head>
+<body class="login-page">
+  <div class="login-container">
+    <div class="login-card">
+      <div class="logo">
+        <img src="Image/logo.png" alt="Trip Ease Logo">
+        <div class="logo-text">TripEase</div>
+      </div>
+      <form onsubmit="return handleLogin(event)">
+        <div class="form-group">
+          <input type="email" class="form-control" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" placeholder="Password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Log In</button>
+      </form>
+      <div class="login-footer">
+        <p>Don't have an account? <a href="register.html">Sign Up</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    function handleLogin(event) {
+      event.preventDefault();  // Prevents the form from submitting
+      window.location.href = "creation-form.html";  // Redirect to dashboard page
+    }
+  </script>
+</body>
+</html>
