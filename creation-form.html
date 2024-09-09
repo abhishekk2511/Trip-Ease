@@ -21,7 +21,7 @@
                     </div>
                     <div class="form-group">
                         <label for="destination">Destination:</label>
-                        <input type="text" class="form-control" id="destination" name="destination" required>
+                        <input type="text" class="form-control" id="destination" name="destination" required >
                     </div>
                     <div class="form-group">
                         <label for="start-date">Start Date:</label>
@@ -35,7 +35,10 @@
                         <label for="budget">Estimated Budget:</label>
                         <input type="number" class="form-control" id="budget" name="budget" min="0" required>
                     </div>
-                    <button type="button" class="btn btn-primary next-btn" onclick="showSection(2)">Next</button>
+                    <div class="next-button">
+                        <button type="button" class="btn btn-primary next-btn" onclick="showSection(2)">Next</button>
+                        
+                    </div>
                 </div>
 
                 <!-- Section 2: Preferences and Activities -->
@@ -72,8 +75,12 @@
                         <label for="group-size">Group Size:</label>
                         <input type="number" class="form-control" id="group-size" name="group-size" min="1" required>
                     </div>
-                    <button type="button" class="btn btn-secondary prev-btn" onclick="showSection(1)">Previous</button>
-                    <button type="button" class="btn btn-primary next-btn" onclick="showSection(3)">Next</button>
+
+                    <div class="second-page-button">
+                        <button type="button" class="btn btn-secondary prev-btn" onclick="showSection(1)">Previous</button>
+                        <button type="button" class="btn btn-primary next-btn" onclick="showSection(3)">Next</button>
+                    </div>
+                    
                 </div>
 
                 <!-- Section 3: Group and Summary -->
@@ -91,8 +98,12 @@
                         <label for="special-notes">Special Notes:</label>
                         <textarea id="special-notes" name="special-notes" class="form-control" rows="4"></textarea>
                     </div>
-                    <button type="button" class="btn btn-secondary prev-btn" onclick="showSection(2)">Previous</button>
-                    <button type="submit" class="btn btn-success submit-btn">Submit</button>
+                    <div class="second-page-button  ">
+
+                        <button type="button" class="btn btn-secondary prev-btn" onclick="showSection(2)">Previous</button>
+                        <button type="submit" class="btn btn-success submit-btn">Submit</button>
+
+                    </div>
                 </div>
             </form>
         </div>

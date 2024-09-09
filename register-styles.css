@@ -280,6 +280,10 @@
   
   /* Signup Container */
   /* Adjusting the card height */
+
+ .signup-container{
+    margin-top: 38px;
+ }
 .signup-card {
   max-width: 500px;
   width: 100%;
@@ -324,7 +328,10 @@
     border-color:  #f17223;
   }
 
-  
+  .login-link:hover{
+    text-decoration: none;
+    color: #2b00ff;
+  }
   
   /* Footer */
   footer {

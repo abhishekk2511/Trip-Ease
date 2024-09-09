@@ -14,6 +14,10 @@ body {
     max-width: 800px;
 }
 
+
+.form-control{
+    color: rgb(178, 173, 173);
+}
 .form-section {
     display: none;
     padding: 20px;
@@ -50,30 +54,55 @@ button {
     margin: 5px;
 }
 
+
+.next-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .next-btn {
     background-color: #FF914C;
     color: white;
+    border-radius: 7px;
+    /* margin-top: 10px; */
+    /* margin-bottom: -10px;/   */
+    border: #FF914C;
+    margin-top: 2px ;
+    padding: -2px;
+}
+
+.next-btn:hover{
+    background-color: #ec7830;
 }
 
 .prev-btn {
-    background-color: #ddd;
-    color: #333;
+    background-color: #FF914C;
+    margin-top: 10px;
+    color: white;
+    border: #FF914C;
 }
+
 
 .submit-btn {
-    background-color: #03a9f4;
+    background-color:#FF914C;
     color: white;
+    border: #FF914C;
 }
 
+.submit-btn:hover{
+    background-color: #ec7830;
+}
+/* 
 button:hover {
     opacity: 0.8;
-}
+} */
 
 @media (max-width: 600px) {
     .form-container {
         padding: 10px;
     }
 }
+
 
 .tripbasics-div{
     display: flex;
@@ -92,4 +121,13 @@ button:hover {
     font-size:1.8rem;
     padding-top:25px;
     font-weight: 600;
+}
+
+.second-page-button{
+    display: flex;
+    justify-content: space-between;
+
+}
+.mb-4{
+    text-align: center;
 }
