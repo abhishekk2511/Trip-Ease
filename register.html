@@ -9,26 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
  <body> 
-  <!-- <header class="main-header">
-    <div class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">
-        <img src="IMAGES/LOGO.png" alt="Trip Ease Logo" class="logo-image">
-        <span class="logo-text">Trip Ease</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
-          <li class="nav-item"><a class="nav-link" href="signup.html">Sign Up</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Explore Templates</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Join a Trip</a></li>
-        </ul>
-      </div>
-    </div>
-  </header> --> `
 
   <section class="signup-container d-flex justify-content-center align-items-center">
     <div class="signup-card card shadow-sm">
@@ -37,7 +17,7 @@
           <img src="Image\logo.png" alt="Trip Ease Logo" class="logo-image">
           <div class="logo-text">TripEase</div>
         </div>
-        <form action="#" method="post">
+        <form onsubmit="return redirectToDashboard()">
           <div class="form-group">
             <label for="name">Full Name</label>
             <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
@@ -71,12 +51,16 @@
     </div>
   </section>
 
-  <!-- <footer class="text-center py-4">
-    <p>&copy; 2024 Trip Ease. All rights reserved.</p>
-  </footer> -->
-
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    function redirectToDashboard() {
+      // Prevent form from submitting
+      window.location.href = "dashboard.html"; 
+      return false; // Prevent actual form submission
+    }
+  </script>
 </body>
 </html>
