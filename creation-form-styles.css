@@ -74,3 +74,22 @@ button:hover {
         padding: 10px;
     }
 }
+
+.tripbasics-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.tripease-logo{
+    height: 55px;
+    width: 60px;
+}
+
+
+.tripease-title{
+    font-size:1.8rem;
+    padding-top:25px;
+    font-weight: 600;
+}
