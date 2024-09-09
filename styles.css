@@ -2,27 +2,34 @@
 body {
   background-color: #f4f4f9;
   color: #333;
-  line-height: 1.6;
+  /* line-height: 1.6; */
+  box-sizing: border-box;
 }
 
+
 .navbar {
-  padding: 0 50px;
+  padding: 0 5px;
+  max-height: 80px;
 }
 
 .logo-image {
   height: 80px;
   width: 90px;
-  margin-bottom: 13px; 
+  margin-bottom: 5px; 
 }
 
 .logo-text {
-  font-size: 1.8em;
+  font-family: serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  font: optional;
   color: #FF914C;
+  margin-left: -10px;
 }
 
 .hero {
   position: relative;
-  height: 85vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,7 +78,7 @@ body {
 }
 
 .primary-btn:hover {
-  background-color: #03a9f4;
+  background-color: #e46e25;
 }
 
 .secondary-btn {
@@ -81,7 +88,7 @@ body {
 }
 
 .secondary-btn:hover {
-  background-color: #03a9f4;
+  background-color: #e46e25;
   color: white;
   border: none;
 }
@@ -126,46 +133,55 @@ body {
   color: #555;
 }
 
+/* General Footer Container */
 .footer-container {
   background-color: var(--background-color);
   padding: 0 2rem;
 }
 
+/* Footer with padding for spacing */
 .footer {
   padding: 1.2rem 2.4rem;
   text-align: left;
 }
 
+/* Logo styling */
 .logo-svg {
   width: 80px;
   height: 60px;
+  margin-left: -20px;
 }
 
 .logo-link {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
-  font-size: 1.28rem;
+  /* gap: 0.8rem; */
+  font-size: 1.6rem;
   font-weight: bold;
   color: black;
   text-decoration: none;
 }
 
+.logo-link:hover{
+  text-decoration: none;
+  color: #FF914C;
+   
+}
+
+/* Aligning the text and social icons */
+.social {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center; /* Ensures alignment of icons */
+}
+
+/* Social icons size */
 .social-icon {
   width: 1.5rem;
   height: 1.5rem;
 }
 
-.filler-text {
-  font-size: 1rem;
-  color: #777;
-}
-
-.social {
-  display: flex;
-  gap: 0.8rem;
-}
-
+/* Footer grid layout */
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -173,28 +189,44 @@ body {
   padding-top: 2rem;
 }
 
+/* Footer headings */
 .footer-grid-heading {
   font-size: 1.05rem;
   font-weight: bold;
   color: var(--text-color);
 }
 
+/* Removing list styles */
 ul {
   list-style-type: none;
+  padding-left: 0;
 }
 
+/* Footer links styles */
 .footer-link {
   color: #777;
   font-size: 0.875rem;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
+/* Hover effect on footer links - remove underline */
+.footer-link:hover {
+  text-decoration: none;
+  color: var(--text-color);   /* Optionally change color on hover */
+}
+
+/* Footer links container */
 .footer-links-list {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  text-decoration: none;
+  
 }
 
+
+/* Copyright text */
 .footer-copyright {
   color: var(--gray);
   font-size: 0.75rem;
@@ -202,4 +234,25 @@ ul {
   margin-top: 2rem;
   padding-top: 1.15rem;
   border-top: 1px solid #E5E7EB;
+  text-align: center; /* Center-align the copyright text */
+}
+
+.col-md-3{
+  margin-top: 2rem;
+}
+
+.tripease-text
+{
+  margin:5px;
+  margin-left: -10px;
+}
+/* Responsiveness */
+@media (max-width: 768px) {
+  .footer-grid {
+      grid-template-columns: 1fr; /* Stacks columns on small screens */
+      gap: 2rem;
+  }
+  .footer-link {
+      font-size: 0.75rem;
+  }
 }
