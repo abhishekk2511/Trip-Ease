@@ -17,20 +17,47 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    /* padding: 15px;  */
   }
   
-  .navbar .logo h2 {
-    color: white;
-    margin: 0;
-  }
+.navbar-brand {
+height: 80px;
+width: 10px;
+}
+.logo-image {
+  height: 70px;
+  width: 80px;
+  margin-bottom: 5px; 
+}
+
+.logo-text {
+  font-family: serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  font: optional;
+  color: white;
+  margin-right: 50px;
+  margin-left: 70px;
+  margin-top: -55px;
+  margin-bottom:30px;
+  padding-bottom: -40px;
+}
   
   .nav-links {
+    font-size: 0.8rem;
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 10px;
+    /* margin-top: 110px; */
   }
-  
+
+  /* #nav-links{
+    margin-top: 80px;
+  } */
+/*   
+  #nav-hambuger{
+    margin-top: 110px ;
+  } */
   .nav-links li a {
     color: white;
     text-decoration: none;
@@ -39,8 +66,9 @@
   }
   
   .nav-links li a:hover {
-    background-color: #03a9f4;
+    /* background-color: #FF914C;      */
     border-radius: 5px;
+    color: rgb(178, 177, 177);
   }
   
   /* Burger Menu Styles */
@@ -48,6 +76,7 @@
     display: none;
     flex-direction: column;
     cursor: pointer;
+    margin-right: 1rem;
   }
   
   .menu-toggle .bar {
