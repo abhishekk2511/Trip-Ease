@@ -79,6 +79,7 @@ body {
 
 .primary-btn:hover {
   background-color: #e46e25;
+  color: white;
 }
 
 .secondary-btn {
