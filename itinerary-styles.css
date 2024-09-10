@@ -1,0 +1,64 @@
+/* General styles inherit from dashboard-styles.css */
+
+/* Itinerary Specific Styles */
+.itinerary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .itinerary-header h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+  }
+  
+  .itinerary-actions {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .itinerary-actions button {
+    background-color: #FF914C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  .itinerary-actions button:hover {
+    background-color: #e46e25;
+  }
+  
+  /* Itinerary Section */
+  .itinerary {
+    margin-bottom: 40px;
+  }
+  
+  .itinerary-days {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .itinerary-day {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .itinerary-day h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .itinerary-day ul {
+    list-style: none;
+  }
+  
+  .itinerary-day ul li {
+    margin-bottom: 5px;
+  }
+  

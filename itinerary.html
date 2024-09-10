@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TripEase - Itinerary</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard-styles.css">
+  <link rel="stylesheet" href="itinerary-styles.css">
+</head>
+<body>
+
+  <!-- Navbar with Burger Menu (Same as Dashboard) -->
+  <nav class="navbar">
+    <div class="navbar-brand d-flex align-items-center" href="#">
+      <img src="Image/logo.png" alt="TripEase Logo" class="logo-image">
+      <h2 class="logo-text">TripEase</h2>
+    </div>
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="#">Itinerary Templates</a></li>
+      <li><a href="account-setting.html">Account Settings</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <header class="itinerary-header">
+      <h1>Trip to Paris</h1>
+      <div class="itinerary-actions">
+        <button class="btn-edit">Edit Itinerary</button>
+        <button class="btn-approve">Approve Itinerary</button>
+        <button class="btn-finalize">Finalize</button>
+      </div>
+    </header>
+
+    <!-- Itinerary Section -->
+    <section class="itinerary">
+      <h2>Itinerary Overview</h2>
+      <div class="itinerary-days">
+        <!-- Day 1 -->
+        <div class="itinerary-day">
+          <h3>Day 1: Arrival in Paris</h3>
+          <ul>
+            <li>Check-in at Hotel Le Meurice - 10:00 AM</li>
+            <li>Lunch at Le Jules Verne - 12:00 PM</li>
+            <li>Explore Eiffel Tower - 2:00 PM</li>
+            <li>Dinner at Chez Janou - 7:00 PM</li>
+          </ul>
+        </div>
+        <!-- Day 2 -->
+        <div class="itinerary-day">
+          <h3>Day 2: Paris City Tour</h3>
+          <ul>
+            <li>Breakfast at Café de Flore - 8:00 AM</li>
+            <li>Louvre Museum Visit - 10:00 AM</li>
+            <li>Lunch at Angelina - 1:00 PM</li>
+            <li>Notre Dame Cathedral - 3:00 PM</li>
+          </ul>
+        </div>
+        <!-- Day 3 -->
+        <div class="itinerary-day">
+          <h3>Day 3: Versailles Day Trip</h3>
+          <ul>
+            <li>Breakfast at Hotel - 7:30 AM</li>
+            <li>Train to Versailles - 8:30 AM</li>
+            <li>Tour of Versailles Palace - 10:00 AM</li>
+            <li>Lunch at La Petite Venise - 1:00 PM</li>
+            <li>Return to Paris - 4:00 PM</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.getElementById('nav-links');
+    mobileMenu.addEventListener('click', function() {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
