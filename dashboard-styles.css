@@ -195,7 +195,7 @@ width: 10px;
   .btn-create-trip {
     margin-top: 20px;
     padding: 15px 30px;
-    background-color: #03a9f4;
+    background-color: #FF914C;
     color: white;
     border: none;
     border-radius: 30px;
@@ -203,7 +203,7 @@ width: 10px;
   }
   
   .btn-create-trip:hover {
-    background-color: #FF914C;
+    background-color: #e46e25;
   }
   
   /* Notifications Section */
