@@ -1,64 +1,105 @@
 /* General styles inherit from dashboard-styles.css */
-
-/* Itinerary Specific Styles */
-.itinerary-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
+body {
+    font-family: 'Poppins', sans-serif;
   }
   
-  .itinerary-header h1 {
-    font-size: 2.5em;
-    font-weight: 600;
+  .carousel {
+    width: 100%;
+    overflow-x: scroll;
+    padding: 30px;
+    padding-top: 80px;
+    position: relative;
+    box-sizing: border-box;
   }
   
-  .itinerary-actions {
-    display: flex;
-    gap: 15px;
+  .carousel__container {
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding-bottom: 10px;
+    display: inline-block;
   }
   
-  .itinerary-actions button {
+  .categories__title {
+    color: rgb(77, 55, 102);
+    font-size: 28px;
+    position: absolute;
+    padding-left: 30px;
+  }
+  
+  .carousel-item {
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    background-color: #95bcd6;
+    overflow: hidden;
+    margin-right: 20px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 1000ms all;
+    transform-origin: center left;
+    position: relative;
+  }
+  
+  .carousel-item:hover ~ .carousel-item {
+    transform: translate3d(100px, 0, 0);
+  }
+  
+  .carousel__container:hover .carousel-item {
+    opacity: 0.3;
+  }
+  
+  .carousel__container:hover .carousel-item:hover {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  
+  .carousel-item__details {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+    font-size: 12px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: 450ms opacity;
+  }
+  
+  .carousel-item__details:hover {
+    opacity: 1;
+  }
+  
+  .carousel-item__details h5 {
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .carousel-item__details ul {
+    color: #fff;
+    font-size: 14px;
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .controls {
+    margin-top: 10px;
+  }
+  
+  .controls .btn-edit,
+  .controls .btn-suggestions {
     background-color: #FF914C;
     color: white;
     border: none;
-    padding: 10px 20px;
-    border-radius: 30px;
+    padding: 8px 12px;
+    border-radius: 20px;
     cursor: pointer;
+    font-size: 12px;
+    margin-right: 10px;
   }
   
-  .itinerary-actions button:hover {
+  .controls .btn-edit:hover,
+  .controls .btn-suggestions:hover {
     background-color: #e46e25;
-  }
-  
-  /* Itinerary Section */
-  .itinerary {
-    margin-bottom: 40px;
-  }
-  
-  .itinerary-days {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .itinerary-day {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .itinerary-day h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
-  
-  .itinerary-day ul {
-    list-style: none;
-  }
-  
-  .itinerary-day ul li {
-    margin-bottom: 5px;
   }
   
