@@ -12,6 +12,11 @@ body {
   max-height: 80px;
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color: #281307;
+  font-size: 1.3em;
+}
+
 .logo-image {
   height: 80px;
   width: 90px;
