@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Editable Itinerary Page</title>
+  <link rel="stylesheet" href="Itinerary-styles.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header>
+      <h1>Trip to Italy</h1>
+      <p>June 12 - June 19, 2024</p>
+      <div class="progress-bar">
+        <span class="progress">4/6 members approved</span>
+      </div>
+    </header>
+
+    <!-- Main Itinerary Section -->
+    <section class="itinerary">
+      <h2>Day-by-Day Itinerary</h2>
+      <div class="day" id="day-1">
+        <h3>Day 1: Rome Arrival</h3>
+        <button class="edit-btn">Edit</button>
+        <button class="ai-btn">AI Suggestions</button>
+        <ul>
+          <li>10:00 AM - Arrival at Rome Airport</li>
+          <li>1:00 PM - Check-in at Hotel</li>
+          <li>4:00 PM - Visit Colosseum</li>
+        </ul>
+      </div>
+
+      <div class="day" id="day-2">
+        <h3>Day 2: Vatican City Tour</h3>
+        <button class="edit-btn">Edit</button>
+        <button class="ai-btn">AI Suggestions</button>
+        <ul>
+          <li>9:00 AM - Breakfast at Hotel</li>
+          <li>10:00 AM - Vatican Museum Tour</li>
+          <li>2:00 PM - St. Peter's Basilica</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Group Collaboration Section -->
+    <section class="group-collaboration">
+      <h2>Group Members</h2>
+      <ul>
+        <li>John Doe - <span class="status approved">Approved</span></li>
+        <li>Jane Smith - <span class="status pending">Pending</span></li>
+        <li>Emily Davis - <span class="status approved">Approved</span></li>
+        <li>Mark Jones - <span class="status pending">Pending</span></li>
+      </ul>
+      <button class="action-btn">Send Reminder</button>
+      <button class="action-btn">Split Costs</button>
+    </section>
+
+    <!-- Approval Buttons -->
+    <section class="approval">
+      <button class="approve-btn">Approve Itinerary</button>
+      <button class="finalize-btn" id="finalize-btn" disabled>Finalize Itinerary</button>
+    </section>
+
+    <!-- Floating AI Chatbot -->
+    <div class="chatbot-widget">
+      <img src="Image\Chatbot-Avtar.webp" alt="Chatbot" id="chatbot-img" />
+      <div class="thought-box">Hi, Trippi Here! <br>How can I help you?</div>
+    </div>
+  </div>
+
+  <script src="Itinerary-script.js"></script>
+</body>
+</html>
