@@ -33,9 +33,9 @@
     <header class="itinerary-header">
       <h1>Trip to Paris</h1>
       <div class="itinerary-actions">
-        <button class="btn-edit">Edit Itinerary</button>
-        <button class="btn-approve">Approve Itinerary</button>
-        <button class="btn-finalize">Finalize</button>
+        <button class="btn-primary">Edit Itinerary</button>
+        <button class="btn-secondary">Approve Itinerary</button>
+        <button class="btn-disabled">Finalize</button>
       </div>
     </header>
 
@@ -99,6 +99,26 @@
       </div>
     </section>
   </div>
+
+  <!-- Approval Status Section -->
+  <section class="approval-status">
+    <h2>Approval Status</h2>
+    <ul>
+      <li>
+        <span>John Doe: Approved on September 8, 2024</span>
+        <button class="btn-approve-status approved" disabled>Approved</button>
+      </li>
+      <li>
+        <span>Jane Smith: Pending Approval</span>
+        <button class="btn-approve-status remind-btn">Remind</button>
+      </li>
+      <li>
+        <span>Emily Clark: Pending Approval</span>
+        <button class="btn-approve-status remind-btn">Remind</button>
+      </li>
+    </ul>
+    <p class="finalize-info">All participants must approve the trip to enable finalization.</p>
+  </section>
 
   <script>
     const mobileMenu = document.getElementById('mobile-menu');
