@@ -345,37 +345,37 @@ body {
   
 /* Default button styles */
 .btn-approve-status1 {
-  padding: 10px 20px;
+  padding: 6px 12px;
   border: none;
-  border-radius: 5px;
+  border-radius: 30px;
   color: white;
   background-color: green; /* Approved state color */
   cursor: default; /* No pointer cursor, since it's static */
-  font-size: 16px;
+  font-size: 14px;
   margin-left: 100px;
 }
 
 /* Approved state */
 .btn-approve-status1.approved {
-  background-color: green;
+  background-color: #2ecc71;
 }
 
 /* Default button styles */
 .remind-btn {
-  padding: 10px 20px;
+  padding: 6px 12px;
   border: none;
-  border-radius: 5px;
+  border-radius: 30px;
   color: white;
-  background-color: red; /* Red background for "Remind" buttons */
+  background-color: rgb(240, 83, 83); /* Red background for "Remind" buttons */
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   transition: background-color 0.3s ease, transform 0.1s ease;
   margin-left: 208px;
 }
 
 /* Hover effect for buttons */
 .remind-btn:hover {
-  background-color: darkred;
+  background-color: rgb(208, 27, 27);
 }
 
 /* Active (clicked) state for buttons */
