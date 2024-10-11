@@ -99,51 +99,10 @@ body {
     opacity: 1;
   }
   
-  /* .carousel-item__details {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
-    font-size: 12px;
-    padding: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
-    transition: 450ms opacity;
-  }
-  
-  .carousel-item__details:hover {
-    opacity: 1;
-  }
-  
-  .carousel-item__details h5 {
-    color: #fff;
-    font-size: 18px;
-  }
-  
-  .carousel-item__details ul {
-    color: #fff;
-    font-size: 14px;
-    list-style-type: none;
-    padding-left: 0;
-  } */
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.navbar{
+  background-image: url('https://img.freepik.com/free-vector/dynamic-abstract-lines-shapes-trendy-header_1017-54272.jpg?w=1380&t=st=1726121290~exp=1726121890~hmac=aab06e930e72ea79b93c81d452055cd7eb7d270078b350b0ff82916af7d37061'); 
+  background-size: cover;
+}
 
 /* Style for the card */
 .carousel-item {
@@ -255,29 +214,6 @@ body {
   opacity: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   .controls {
     margin-top: 10px;
   }
@@ -318,10 +254,6 @@ body {
     padding: 0;
     margin: 0;
     font-size: 16px;
-  }
-
-  .john-doe{
-    /* margin-left: 10px; */
   }
   
   .approval-status ul li {
